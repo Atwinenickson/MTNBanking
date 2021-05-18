@@ -1,0 +1,16 @@
+environments:
+  - name: dev
+    endpoints:
+      production:
+          url: "https://10.156.145.219:8017/poextvip/v1"
+          config:
+          retryTimeOut: $RETRY
+      sandbox:
+          url: "https://10.156.145.219:8017/poextvip/v1"
+          config:
+          retryTimeOut: $RETRY
+
+deploy:
+  import:
+    update: true
+    preserveProvider: true
