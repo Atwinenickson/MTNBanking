@@ -14,7 +14,7 @@ pipeline {
                 credentialsId: 'root'
             }
         }
-        stage('Deploy to AGENCY Dev') {
+        stage('Deploy to MTN Dev') {
             environment{
                 RETRY = '80'
             }
