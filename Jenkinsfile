@@ -3,14 +3,14 @@ pipeline {
     tools {nodejs "Node"}
     environment {
         CI = 'true'
-        API_DIR = '/var/lib/jenkins/workspace/MTN'
+        API_DIR = '/var/lib/jenkins/workspace/MTNBanking'
         DEV_ENV = 'dev'
     }
     stages {
         stage('Preparation') {
             steps{
                 git branch: "master",
-                url: 'https://github.com/Atwinenickson/MTNBanking.git',
+                url: 'https://github.com/Atwinenickson/MTNBanking',
                 credentialsId: 'root'
             }
         }
